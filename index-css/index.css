@@ -1,0 +1,241 @@
+@charset "UTF-8"
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet');
+@font-face{
+font-family: 'Android';
+src: url('../fontes/idroid.otf') format('opentype');font-weight: normal;
+}
+*{
+margin: 0;
+padding: 0;
+}
+
+/*cores do site
+#F2C5FA
+#F2AEFA
+#DC8EE5
+#D875E1
+#D16ADC
+*/
+:root {
+--cor1: #F2C5FA;
+--cor2: #F2AEFA;
+--cor3: #DC8EE5;
+--cor4: #D875E1;
+--cor5: #D16ADC;
+--cor6: #c5ebd6;
+--cor7: #83e1ad;
+--cor8: #3ddc84;
+--cor9: #2fa866;
+--cor10:#1a5c37;
+--cor11:#063d1e;
+--cor12:#F5F3AF;
+--cor13:#F5F278;
+--cor14:#F5F145;
+--cor15:#FAF62A;
+--cor16:#E6E418;
+--cor17:#E5DD16;
+--fonte-padrao: arial, verdana, helvetica, sans-serif;
+--fonte-destaque: 'Bebas Neue', cursive;
+--fonte-android: 'Android', cursive;
+}
+    
+body{
+background-image: linear-gradient(to right, #F2C5FA, #F2AEFA, #DC8EE5, #D875E1, #D16ADC);
+font-family:Arial, Helvetica, sans-serif;
+}
+
+figure#foto-logo img {
+width: 100px;
+right: 100px;
+border-radius: 100%;
+margin-left: 45%;
+padding-bottom: -30px;
+}
+    
+figure#foto-logo figcaption {
+opacity: 0;
+position: absolute;
+padding: 0px;
+width: 100%;
+padding: -10px;
+box-sizing: border-box;	
+transition: opacity 1s;    
+border-radius: 20px;
+text-align: center;
+color: var(--cor12);
+font-family: var(--fonte-android);
+}
+    
+figure#foto-logo:hover figcaption {
+opacity: 1;
+}
+header{
+background-image: linear-gradient(to bottom, var(--cor5), var(--cor3), var(--cor2));
+min-height: 150px;
+padding-top: 20px;
+border-bottom: 0.4px solid #D16ADC;
+}
+section{
+text-align: center;
+text-decoration: none;
+background-image: linear-gradient(to top, var(--cor1), var(--cor4));
+padding: 10px;
+box-shadow: 0px 1px 1px rgba(15, 14, 14, 0.788);
+border-bottom: 0.4px solid #E6E418;    
+}
+
+header > h1{
+color: var(--cor12);
+font-family: var(--fonte-android);
+font-size: 2em;
+margin-bottom: 30px;
+text-shadow: 2px 2px 0px rgba(29, 23, 23, 0.808);
+text-align: center;
+padding: 10px;
+}
+
+header > p{
+color: #F5F3AF;
+text-align: center;
+font-family: var(--fonte-padrao);
+font-size: 1.5em;
+max-width: 1500px;
+padding-right: 10px;
+padding: 10px;
+padding-left: 10px;
+margin: auto;
+margin-bottom: 10px;
+text-shadow: 2px 2px 0px rgb(36, 31, 31);
+}
+nav{
+text-align: center;
+text-decoration: none;
+background-image: linear-gradient(to top, var(--cor1), var(--cor4));
+padding: 10px;
+box-shadow: 0px 1px 1px rgba(15, 14, 14, 0.788);
+border-bottom: 0.4px solid #E6E418;
+}
+nav > a {
+text-shadow: 1px 0px 1px black;
+color: #E5DD16;
+text-decoration: none;
+padding: 1px;
+border-radius: 6px;
+font-weight: bolder;
+transition: .6s;   
+}
+nav > a:hover{
+background-color: var(--cor4);
+color: var(--cor17);    
+}
+ 
+article h1{
+text-align: center;  
+font-family: var(--fonte-destaque);  
+margin: 5px;
+padding: 5px;
+}
+article h2{
+text-align: center;
+font-family: var(--fonte-destaque);
+margin: 5px;
+padding: 5px;
+}
+article h3{
+text-align: center;
+font-family: var(--fonte-destaque);
+}
+article > p{
+padding: 5px;
+font-size: 1.2em;
+text-indent: 10px;
+}
+article  #contatos{
+color: #E6E418;
+padding: 1px;
+margin: 5px;
+text-decoration: none;
+transition: .6s;
+background-image: linear-gradient(to top, var(--cor3), var(--cor5));
+border-radius: 10px;
+font-family: var(--fonte-destaque);
+font-size: 15px;
+}
+article #contatos:hover{
+background-color: var(--cor4);
+color: var(--cor3);
+} 
+ 
+main{
+background-image: linear-gradient(to right, var(--cor5),  var(--cor4),var(--cor2));
+min-width: 300px;
+max-width: 800px;
+margin: 10px auto;    
+box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.664);
+margin-bottom: 35px;
+border-top-left-radius: 10px;
+border-bottom-right-radius: 10px;  
+}
+main img{
+width: 100%;
+}
+main img .pequena{
+max-width: 350px;
+display: block;
+margin: auto;
+}
+aside > ul{
+text-align: inherit;
+margin: 10px;
+list-style-position: inside;
+list-style-type: '\2714\00a0\00a0';
+/*list-style-type: '\2799\00a0\00a0 esses são
+códigos do google chek'
+Não é compativel com todos os navegadores*/
+}
+figure.foto-legenda {
+position: relative;
+text-align: center;
+}
+
+figure.foto-legenda img {
+width: 98%;
+right: 98%;
+border-radius: 20px;
+}
+
+figure.foto-legenda figcaption {
+opacity: 0;
+position: absolute;
+top: 0px;
+background-color: rgba(240, 125, 192, 0.555);
+color: var(--cor12);
+width: 100%;
+height: 100%;
+padding: 10px;
+box-sizing: border-box;	
+transition: opacity 1s;    
+border-radius: 20px;
+}
+
+figure.foto-legenda:hover figcaption {
+opacity: 1;
+}
+aside p{
+text-indent: 15px;
+}
+    
+footer{
+text-align: center;
+text-decoration: none;
+padding: 10px;
+box-shadow: 0px 1px 1px rgba(15, 14, 14, 0.788);
+border-bottom: 0.4px solid #E6E418;
+text-align: center;
+font-family: var(--fonte-destaque);
+color: #000000;
+}
+footer >p{
+    color: blue;
+    font-weight: bolder;
+}
