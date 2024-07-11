@@ -80,3 +80,5 @@
         <footer>           
             <p>&reg; Flavio Leonardo</p>
         </footer>
+	</body>
+</html>
